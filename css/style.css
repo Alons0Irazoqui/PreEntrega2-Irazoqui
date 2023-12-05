@@ -7,191 +7,117 @@
 
 /* Estilos generales */
 
-a{
-    text-decoration: none;
-}
-img{
-    width: 60%;
-}
-iframe{
 
-    width: 50%;
-    height: 300px;
-}
-.boton{
-    padding: 5px 20px;
-    background-color:#0141f2;
-    border: none;
-    border-radius: 20px;
-    color: #eee;
-    font-weight: 700;
-    cursor: pointer;
-}
-section{
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 0 5%;
-    
-}
-
-h2{
-    font-size: 30px;
-    font-weight: bold;
-}
-p{
-    font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 20px;
-    color: #666;
-}
-/* Estilos del Header */
-
+/* Estilos del Heades y Nav */
 .header{
-    width: 100%;
-    height: 100px;
-    background-color: #f6f6f6;
-    padding: 10px 5%;
+    box-shadow: 0px 0px 10px #222;
     position: fixed;
-    box-shadow: 0px 0px 10px #ccc;
-}
-.header .logo{
-    margin-bottom: 10px;
-}
-.header .logo img{
-    width: 50px;
-}
-.header p{
-    font-size: 20px;
-    display: inline;
-    font-weight: 800;
-}
-
-/* Estilos del nav */
-
-.header .nav ul{
-    list-style: none;
-}
-.header .nav li{
-    display: inline;
-    margin-right: 10px;
-    
-}
-.header .nav a{
-    color: #222;
-    font-weight: 500;
-}
-
-/* Estilos del main */
-.main{
-    padding-top: 100px;
-}
-
-.main .hero{
     width: 100%;
-    padding-top: 220px;
-    padding-bottom: 220px;
+}
+.header .navbar img{
+    width: 50px;
+    margin-right: 15px;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+.navbar{
+    background-color: #fff;
+}
+.navbar .ul{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+.navbar .ul li a{
+    font-weight: 500;
+    color: #222;
+    transition: all .3s;
     text-align: center;
+}
+.navbar .ul li a:hover{
+    font-weight: 500;
+    transform: scale(.9);
+    color: #ffa600;
+}
+.navbar .ul .li-contacto{
+    padding: 0px 10px;
+    margin-left: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 2px solid #ffa600;
+}
+.navbar .ul .li-contacto a{
+    color: #ffa600;
+    font-weight: 700;
+    display: block;
     
 }
-.main .hero h1{
+.navbar .ul .li-contacto a:hover{
+    font-weight: 700;
+}
+
+.navbar .buton{
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.navbar .buton span{
+    background-image: url(../img/menu.png);
+}
+
+
+/* Seccion Main */
+.main{
+    width: 100%;
+    padding-top: 75px;
+}
+
+/* Seccion Hero */
+
+.hero{
+    width: 100%;
+    height: calc(100vh - 75px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#00000018, #000000c0), url(../img/Wallpapers/index.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+}
+.hero h1{
+    text-align: center;
+    font-size: 3.4em;
+    font-weight: 700;
     color: #fff;
-    font-size: 50px;
 }
 .hero p{
+    font-size: 1.2em;
+    text-align: center;
     color: #fff;
-    font-size: 20px;
     font-weight: 700;
-    margin-bottom: 20px;
+}
+
+.boton{
+    text-decoration: none;
+    padding: 10px 20px;
+    border:3px solid #ffa600;
+    color: #ffa600;
+    border-radius: 20px;
+    font-weight: 700;
+    transition: all .3s;
+}.boton:hover{
+    box-shadow: 0px 0px 15px #ffa600;
+    text-shadow: 0px 0px 15px #ffa600;
+    transform: scale(.9);
 }
 
 
-/* Estilos del Footer */
-
-.footer{
-    width: 100%;
-    padding: 20px 5%;
-    background-color: #f6f6f6;
-    margin-top: 30px;
-    text-align: center;
-}
-
-.footer .footer-enlaces li{
-    display: inline;
-    padding:0px  10px;
-
-}
-
-.footer-enlaces li a{
-    color: #222;
-}
-.footer .footer-copyright{
-    margin-top: 30px;
-}
-.footer img{
-    width: 70px;
-}
-.footer .footer-copyright p{
-    margin-top: 10px;
-    font-size: 13px;
-    font-weight: 500;
-}
-
-
-/* Estilos de Contacto */
-.contacto-section{
-    padding-top: 50px;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-}
-.contacto-section img{
-    width: 100px;
-}
-.contacto-section form{
-    width: 350px;
-    height: auto;
-    padding: 20px;
-    background-color:#fff;
-    box-shadow: 0px 0px 10px #ccc;
-}
-
-.contacto-section form input, .contacto-section form textarea{
-    width: 90%;
-    padding: 5px;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-/* poniendo el fondo a las secciones */
-.hero-index{
-    background: linear-gradient(#00000000, rgba(0, 0, 0, 0.765)),url(../img/Wallpapers/index.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.hero-multimedia{
-    background: linear-gradient(#00000000, rgba(0, 0, 0, 0.765)),url(../img/Wallpapers/Multimedia.avif);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.hero-manga{
-    background: linear-gradient(#00000000, rgba(0, 0, 0, 0.765)),url(../img/Wallpapers/MangaAnime.webp);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.hero-arcos{
-    background: linear-gradient(#00000000, rgba(0, 0, 0, 0.765)),url(../img/Wallpapers/Arcos.jpg);
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
