@@ -32,19 +32,22 @@
     display: flex;
     justify-content: right;
 }
+.navbar ul li{
+    margin: 0px 10px;
+}
 .navbar .ul li a{
-    font-weight: 500;
+    font-weight: 600;
     color: #222;
     transition: all .3s;
     text-align: center;
 }
 .navbar .ul li a:hover{
-    font-weight: 500;
+    font-weight: 600;
     transform: scale(.9);
     color: #ffa600;
 }
 .navbar .ul .li-contacto{
-    padding: 0px 10px;
+    padding: 0px 30px;
     margin-left: 10px;
     background-color: #fff;
     border-radius: 20px;
@@ -82,11 +85,13 @@
 .hero{
     width: 100%;
     height: calc(100vh - 75px);
+    padding: 0px 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(#00000018, #000000c0), url(../img/Wallpapers/index.png);
+    border-bottom-left-radius: 50%;
+    background: linear-gradient(#00000038, #000000de), url(../img/Wallpapers/index.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -120,4 +125,47 @@
     transform: scale(.9);
 }
 
+
+/* Seccion Sobre One-Site */
+
+.sobre-oneSite{
+    padding: 60px 0px;
+}
+.sobre-oneSite .row{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+
+.sobre-oneSite h2{
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.sobre-oneSite p{
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.sobre-oneSite p b{
+    display: block;
+    margin-top: 20px;
+}
+
+
+/* Seccion de Noticias */
+.noticias{
+    padding-bottom: 60px;
+}
+
+.noticias h2{
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+/* Otra seccion */
 
