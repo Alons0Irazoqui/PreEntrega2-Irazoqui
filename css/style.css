@@ -258,3 +258,56 @@ p .negrita{
 .footer img{
     width: 60px;
 }
+
+
+/* Seccion de Hero Arcos */
+
+/* hero */
+.hero-arcos{
+    background-image:linear-gradient(#00000018,#000000a9), url(../img/Wallpapers/Arcos.jpg);
+}
+
+/* arcos */
+
+.arcos div img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #bbb;
+}
+
+.arcos .row{
+    padding: 80px 0px;
+}
+.arcos .row h2{
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.arcos .row h2 span{
+    color: #ffa600;
+    font-size: 1.2em;
+}
+
+.arcos .row p{
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.arcos-marineford{
+    padding: 0 10%;
+    background:linear-gradient(#ffffffbd, #ffffff), url(../img/Arcos/MarineFord1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.arcos-eastBlue{
+    padding: 0 10%;
+    background:linear-gradient(#ffffffbd, #ffffff), url(../img/Arcos/EastBlue1.webp);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
